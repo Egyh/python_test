@@ -58,3 +58,17 @@ def average_calc(x, y):
 
 result = average_calc(7,19)
 print(result)
+
+class BodyCondition:
+    def __init__(self,arg_weight,arg_height):#イニシャライザー
+        self.weight = arg_weight #インスタンス変数
+        self.height = arg_height #インスタンス変数
+    
+    def bmi_calc(self):
+        m_height = self.height / 100
+        bmi = self.weight / m_height / m_height
+        print(bmi)
+        
+bc = BodyCondition(55,150)#bcにBodyConditionクラスを代入
+bc.bmi_calc()       
+        
